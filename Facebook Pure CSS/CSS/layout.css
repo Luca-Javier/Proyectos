@@ -1,0 +1,70 @@
+main {
+	background-color: rgb(218, 221, 225);
+	min-height: 100vw;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+	grid-template-areas:
+		"header        header        header        header        header        header        header        header        header        header        header        header"
+		"header        header        header        header        header        header        header        header        header        header        header        header"
+		"publicar      publicar      publicar      publicar      publicar      publicar      publicar      publicar      publicar      publicar      publicar      publicar"
+		"historias-tittle-left historias-tittle-left historias-tittle-left historias-tittle-left historias-tittle-left historias-tittle-left historias-tittle-rig historias-tittle-rig historias-tittle-rig historias-tittle-rig historias-tittle-rig historias-tittle-rig"
+		"historias     historias     historias     historias     historias     historias     historias     historias     historias     historias     historias     historias"
+		"historias     historias     historias     historias     historias     historias     historias     historias     historias     historias     historias     historias"
+		"public-info   public-info   public-info   public-info   public-info   public-info   public-info   public-info   public-info   public-info   public-info   public-info"
+		"public-coment public-coment public-coment public-coment public-coment public-coment public-coment public-coment public-coment public-coment public-coment public-coment"
+		"content       content       content       content       content       content       content       content       content       content       content       content"
+		"content       content       content       content       content       content       content       content       content       content       content       content"
+		"likeS         likeS         likeS         likeS         comentS       comentS       comentS       comentS       cant-comentS  cant-comentS  cant-comentS  cant-comentS"
+		"like          like          like          like          coment        coment        coment        coment        cant-coment   cant-coment   cant-coment   cant-coment";
+	/* en el header van a ir las 2 rows del mobiley y las voy a alinear con un grid-wrap y flexbox
+  o poniendole 2 filas de header ya está??. No se */
+}
+main > * {
+	border: medium solid black;
+	background-color: gray;
+}
+header {
+	grid-area: header;
+}
+.publicar {
+	grid-area: publicar;
+}
+.historias-tittle-left {
+	grid-area: historias-tittle-left;
+}
+.historias-tittle-rig {
+	grid-area: historias-tittle-rig;
+}
+.historia {
+	grid-area: historias;
+	margin-top: var(--space-3xs);
+}
+.public-info {
+	grid-area: public-info;
+	margin-top: var(--space-3xs);
+}
+.public-coment {
+	grid-area: public-coment;
+}
+.content {
+	grid-area: content;
+}
+.likeS {
+	grid-area: likeS;
+}
+.comentS {
+	grid-area: comentS;
+}
+.cant-comentS {
+	grid-area: cant-comentS;
+}
+.like {
+	grid-area: like;
+}
+.coment {
+	grid-area: coment;
+}
+.cant-coment {
+	grid-area: cant-coment;
+}
